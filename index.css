@@ -1,0 +1,67 @@
+<@charset "UTF-8";>
+
+.none {
+}
+
+body {
+    font-family: "Avenir Next";
+    color: #FFFFF5;
+}
+
+/*ヘッダー*/
+.header {
+    background-color: #202225;
+    height: 90px;
+}
+
+.header-logo {
+    float: left;
+    height: 70px;
+    width: 359px;
+    padding: 10px 40px 20px 30px;
+}
+.header-list li {
+    float: left;
+    list-style: none;
+    padding: 33px 20px;
+}
+
+/*メイン*/
+.main {
+    background-color: #3A3D43;
+    padding: 100px 80px;
+}
+
+.copy-container h2 {
+    font-size: 140px;
+}
+  
+.copy-container h3 {
+    font-size: 60px;
+}
+
+.copy-container span {
+    color: #fff;
+}
+
+  /*フッター*/
+.footer {
+    background-color: #2F3136;
+    height: 200px;
+    padding: 40px;
+}
+
+.footer-logo {
+    float: left;
+    height: 170;
+    width: 245;
+}
+
+.footer-list{
+    float: right;
+}
+
+.footer-list li {
+    padding-bottom: 20px;
+    list-style: none;
+}
