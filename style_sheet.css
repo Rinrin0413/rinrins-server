@@ -40,6 +40,22 @@ body {
     font-size: 60px;
 }
 
+.copy-container iframe {
+    float: right;
+}
+
+#discord-join-button {
+    color: #FFFFF5;
+    background-color: rgb(0, 223, 130);
+    font-size: 30px;
+    padding: 10px;
+    position: relative;
+    top: 550px;
+    left: 1340px;
+    border-radius: 10px;
+    box-shadow: 0px 8px rgb(0, 116, 67);
+}
+
 #title {
     display: none;
 }
@@ -62,10 +78,21 @@ body {
 }
 
 .footer-list{
-    float: right;
+    float: left;
 }
 
 .footer-list li {
     padding-bottom: 20px;
     list-style: none;
+}
+
+.site-license {
+    color: #808088;
+    font-size: 20px;
+    padding: 0px 0px 0px 1000px;
+    float: left;
+}
+
+a.fooder-twitter {
+    color: #808088;
 }
