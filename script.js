@@ -3,9 +3,6 @@ $(function() {
     $("#subtitle").fadeIn(2700);
     $("#discord-join-button").click(function(){
         $("#discord-join-button").css("box-shadow", "0px 3px rgb(0, 116, 67)");
-        $("#discord-join-button").css("float", "right");
-        $("#discord-join-button").css("position", "absolute");
-        $("#discord-join-button").css("left", "80px");
-        $("#discord-join-button").text("Joined");
+        $("#discord-join-button").text("|=+=< Joined >=+=|");
     });
 });
