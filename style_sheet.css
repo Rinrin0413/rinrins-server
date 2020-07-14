@@ -99,6 +99,11 @@ ul {
     height: 4600px;
 }
 
+.tutorials hr {
+    border-width: 10px 10px 10px;
+    border-radius: 20px;
+}
+
 .big-kaigyo {
     margin-bottom: 20px;
 }
