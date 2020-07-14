@@ -21,6 +21,10 @@ a {
     background-color: black;
 }
 
+ul {
+    list-style: none;
+}
+
 /*ヘッダー*/
 .header {
     background-color: #202225;
@@ -66,7 +70,6 @@ a {
 }
 
 .slider {
-    float: left;
     padding: 0px;
     margin: 0px;
 }
@@ -93,7 +96,7 @@ a {
 }
 
 .tutorials {
-    height: 5000px;
+    height: 4600px;
 }
 
 .big-kaigyo {
@@ -112,6 +115,13 @@ a {
 
 .tutorial-category {
     margin: 50px;
+}
+
+.tutorial-description span {
+    font-size: 50px;
+    background: rgb(239, 116, 255);
+    box-shadow: 0px 0px 0px 5px rgb(239, 116, 255);
+    border: dashed 2px #000;
 }
 
 .tutorial-description {
@@ -154,4 +164,12 @@ a {
 
 a.fooder-twitter {
     color: #808088;
+}
+
+.social-bar-main {
+    padding: 20px 20px 100px 20px;
+}
+
+.social-bar {
+    padding: 20px 20px 100px 20px;
 }
