@@ -69,6 +69,13 @@ ul {
     left: 75%;
 }
 
+#discord-join-button:active {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);/*下に動く*/
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+    border-bottom: none;
+}
+
 .slider {
     padding: 0px;
     margin: 0px;
@@ -177,4 +184,38 @@ a.fooder-twitter {
 
 .social-bar {
     padding: 20px 20px 100px 20px;
+}
+
+
+
+
+
+
+
+
+
+/*******ここからはその他*********/
+
+/*GoToTopButton*/
+#top_move {
+    font-size: 26px;
+    cursor: pointer;
+    display: inline;
+    padding: 0.65em 0.5em;
+    text-decoration: none;
+    background: #EF323D;
+    color: #FFF;
+    border-bottom: solid 5px #750006;
+    border-radius: 10px;
+    position:fixed;
+    right:40px;
+    bottom:40px;
+    transition:0s 0.1s ease-out;
+}
+
+#top_move:active {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);/*下に動く*/
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+    border-bottom: none;
 }
