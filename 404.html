@@ -13,27 +13,37 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-        <script type="text/javascript">
-        $(document).ready(function(){
-            $(".slider").bxSlider({
-                auto: true,
-                pause: 3000,
-            });
-        });
-        </script>
     </head>
     <body background="https://cdn.discordapp.com/attachments/727522785001472030/730732875191681094/f972a9cc8c69b52d.png">
         <script src="script.js"></script>
         <!--[{(ヘッダ)}]ー-->
-        <div class=header>
-            <a href="index.html"><img class="header-logo" src="https://cdn.discordapp.com/attachments/628221080997462091/730350973419126815/RinrinsServer_titile_v2.png"></a>
-            <div class="header-list">
-              <ul>
-                <a href="tutorial.html" class="list"><li>Tutorial|チュートリアル</li></a>
-                <a href="index.html" class="list"><li>Home|ホーム</li></a>
-              </ul>
+        <header class=header>
+            <a href="index.html">
+                <img class="header-logo" src="https://cdn.discordapp.com/attachments/628221080997462091/730350973419126815/RinrinsServer_titile_v2.png">
+            </a>
+            <!-- ▼ ハンバーガ-->
+            <div class="el_humburger">
+                <div class="el_humburger_wrapper">
+                    <span class="el_humburger_bar top"></span>
+                    <br>
+                    <span class="el_humburger_bar middle"></span>
+                    <br>
+                    <span class="el_humburger_bar bottom"></span>
+                </div>
             </div>
-        </div>
+            <header class="navi">
+                <div class="navi_inner">
+                    <div class="navi_item"><a href="index.html">Home|ホーム</a></div>
+                    <div class="navi_item"><a href="admins.html">Admins|運営紹介</a></div>
+                    <div class="navi_item"><a href="rule.html">Rule|ルール</a></div>
+                    <div class="navi_item"><a href="way-to-join.html">Way to join|参加方法</a></div>
+                    <div class="navi_item"><a href="tutorial.html">Tutorial|チュートリアル</a></div>
+                    <div class="navi_item"><a href="contact.html">Contact|お問合せ</a></div>
+                    <div class="navi_item"><a href="news.html">News|ニュース</a></div>
+                </div>
+            </header>
+            <!-- ▲ ハンバーガ-->
+        </header>
         <!--[{(メイン)}]-->
         <div class=main>
             <script src="script.js"></script>
@@ -55,19 +65,10 @@
         <!--[{(フッター)}]-->
         <div class=footer>
             <img class="footer-logo" src="https://cdn.discordapp.com/attachments/628219126543941632/730734444075548763/RSL.png">
-            <div class=footer-list>
-                <ul>
-                    <a href="index.html"><li>Home|ホーム</li></a>
-                    <a href="tutorial.html"><li>Tutorial|チュートリアル</li></a>
-                </ul>
-            </div>
             <div class="site-license">
                 © 2020-2020 <a href="https://twitter.com/__rinrin0413__" class="fooder-twitter" style="text-decoration:none;">@__Rinrin0413__</a>
             </div>
             <div class="social-bar-main">
-                <a href="https://twitter.com/__rinrin0413__" class="fooder-twitter" style="text-decoration:none;"><img src="img/twitter.png" width="25px" height="25px"></a>
-            </div>
-            <div class="social-bar">
                 <a href="https://twitter.com/__rinrin0413__" class="fooder-twitter" style="text-decoration:none;"><img src="img/twitter.png" width="25px" height="25px"></a>
             </div>
         </div>
