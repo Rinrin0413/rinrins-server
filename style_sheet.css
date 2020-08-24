@@ -6,6 +6,7 @@
 body {
     font-family: "MainFont";
     color: #FFFFF5;
+    background: #2B2B2B;
 }
 
 a {
@@ -28,14 +29,13 @@ ul {
 /*ヘッダー*/
 .header {
     background-color: #202225;
-    height: 300px;
+    height: 170px;
 }
 
 .header-logo {
     float: left;
-    height: 130px;
-    width: 667px;
-    padding: 40px 13px 20px 13px;
+    height: 70%;
+    padding: 10px;
 }
 
 /*メイン*/
@@ -52,21 +52,26 @@ ul {
     font-size: 60px;
 }
 
-.copy-container iframe {
-    float: right;
+.box-p {
+    display: block;
+}
+
+.iframe-dis {
+    display: block;
+    left: 20px;
 }
 
 #discord-join-button {
-    float: right;
+    user-select: none;
     color: #FFFFF5;
     background-color: rgb(0, 223, 130);
     border-radius: 10px;
     box-shadow: 0px 8px rgb(0, 116, 67);
     font-size: 30px;
     padding: 10px;
-    position: absolute;
-    top: 45%;
-    left: 75%;
+    display: inline;
+    text-align: center;
+    
 }
 
 #discord-join-button:active {
@@ -206,8 +211,9 @@ a.fooder-twitter {
 
 /*******ここからはその他*********/
 
-/*GoToTopButton*/
+/* ▼ GoToTopButton*/
 #top_move {
+    user-select: none;
     font-size: 26px;
     cursor: pointer;
     display: inline;
@@ -229,3 +235,192 @@ a.fooder-twitter {
     box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
     border-bottom: none;
 }
+/* ▲ GoToButton*/
+
+/* ▼ ハンバーガー*/
+
+br {
+    user-select: none;
+}
+
+.navi_inner a{
+    color: darkgreen;
+}
+.el_humburger {
+    position: fixed;
+    top: 60px;
+    right: 60px;
+    width: 46px;
+    height: 25px;
+    padding-top: 1px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-top: 0px;
+    z-index: 20;
+    cursor: pointer;
+    pointer-events: auto;
+    color: white;
+    text-align: center;
+}
+@media screen and (max-width: 840px) {
+    .el_humburger {
+        display: block;
+        right: 0;
+        top: 0;
+        padding-top: 20px;
+        width: 70px;
+        height: 70px;}
+    #factory .el_humburger {
+        display: none; 
+    } 
+}
+   
+.el_humburger_wrapper {
+    width: 62px;
+    display: block; 
+    padding: 30px;
+    background: darkslateblue;
+    float: top;
+    border-bottom: solid 7px rgb(18, 11, 65);
+    border-top-left-radius: 1em;
+    border-bottom-left-radius: 5em;
+}
+   
+  @media screen and (max-width: 840px) {
+    .el_humburger_wrapper {
+      margin-bottom: 5px;
+      width: 60px; 
+    } 
+}
+   
+  .el_humburger_text {
+    font-size: 12px;
+    letter-spacing: 0.1em;
+}  
+.js_humburgerOpen .el_humburger_text.el_humburger_text__menu {
+    display: none; 
+}  
+.el_humburger_text.el_humburger_text__close {
+    display: none; 
+}
+.js_humburgerOpen .el_humburger_text.el_humburger_text__close {
+    display: block; 
+}
+@media screen and (max-width: 840px) {
+    .el_humburger_text {
+        font-size: 10px;
+        padding-top: 2px; 
+    } 
+}
+@media screen and (max-width: 840px) {
+    .el_humburger_text svg path {
+        -webkit-transition: all 200ms cubic-bezier(0.16, 0.52, 0.25, 1);
+        -o-transition: all 200ms cubic-bezier(0.16, 0.52, 0.25, 1);
+        transition: all 200ms cubic-bezier(0.16, 0.52, 0.25, 1);
+        /*fill: wheat;*/
+    } 
+}
+   
+  @media screen and (max-width: 840px) {
+    .js_humburgerOpen .el_humburger_text svg path {
+      fill: wheat; } }
+   
+  .el_humburger span.el_humburger_bar {
+    display: block;
+    width: 100%;
+    margin: 0 auto 9px;
+    height: 1px;
+    background: wheat;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out; }
+   
+  .el_humburger span.el_humburger_bar:last-child {
+    margin-bottom: 0; }
+   
+  .js_humburgerOpen .el_humburger span.el_humburger_bar {
+    background: wheat; }
+   
+  @media screen and (max-width: 840px) {
+    .el_humburger span.el_humburger_bar {
+        left: 0;
+        top: 0;
+        background: wheat;
+    } 
+}
+   
+  .js_humburgerOpen .el_humburger span.el_humburger_bar.top {
+    -webkit-transform: translateY(9px) rotate(-45deg);
+    -ms-transform: translateY(9px) rotate(-45deg);
+    transform: translateY(9px) rotate(-45deg); }
+   
+  .js_humburgerOpen .el_humburger span.el_humburger_bar.middle {
+    opacity: 0; }
+   
+  .js_humburgerOpen .el_humburger span.el_humburger_bar.bottom {
+    -webkit-transform: translateY(-11px) rotate(45deg);
+    -ms-transform: translateY(-11px) rotate(45deg);
+    transform: translateY(-11px) rotate(45deg); }
+   
+  .el_humburgerButton.el_humburgerButton__close {
+    top: 2%;
+    right: 2%; }
+   
+  .el_humburgerButton__close span.el_humburger_bar {
+    display: block;
+    width: 35px;
+    margin: 0 auto;
+    height: 4px;
+    background: wheat; }
+   
+  .el_humburgerButton__close span.el_humburger_bar.top {
+    -webkit-transform: translateY(5px) rotate(-45deg);
+    -ms-transform: translateY(5px) rotate(-45deg);
+    transform: translateY(5px) rotate(-45deg); }
+   
+  .el_humburgerButton__close span.el_humburger_bar.bottom {
+    -webkit-transform: translateY(-6px) rotate(45deg);
+    -ms-transform: translateY(-6px) rotate(45deg);
+    transform: translateY(-6px) rotate(45deg); }
+   
+  .navi {
+    position: fixed;
+    right: 0;
+    height: 100%;
+    background-color: rgba(205, 200, 255, 0.8);
+    width: 0;
+    z-index: 3;
+    padding-top: 100px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 600ms ease-out;
+    -o-transition: all 600ms ease-out;
+    transition: all 600ms ease-out;
+    overflow: hidden; }
+    .js_humburgerOpen .navi {
+      width: 450px; }
+      @media screen and (max-width: 840px) {
+        .js_humburgerOpen .navi {
+          width: 100%;
+          padding: 100px 5% 0; } }
+   
+.navi_item {
+    padding: 10px;
+    background: rgba(205, 200, 255, 0.9);
+    margin-bottom: 10px;
+    font-size: 30px;
+    white-space: nowrap;
+    margin-left: 90px; 
+}
+
+.navi_item.op_innerLink {
+    cursor: pointer; 
+}
+@media screen and (max-width: 840px) {
+    .navi_item {
+        margin-left: 0;
+        font-size: 18px; 
+    } 
+}
+
+/* ▲ ハンバーガー*/
