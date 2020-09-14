@@ -1,1 +1,0 @@
-#These're tutorial images.
