@@ -1,0 +1,385 @@
+@font-face {
+    font-family: "MainFont";
+    src: url("font.ttf");
+}
+
+html {
+    display: inline;
+}
+
+body {
+    font-family: "MainFont";
+    color: #FFFFF5;
+    background: #2B2B2B;
+}
+
+a {
+    text-decoration: none;
+    color: #FFFFF5;
+}
+
+.list {
+    float: right;
+    list-style: none;
+    margin: 33px 20px;
+    padding: 10px;
+    background-color: black;
+}
+
+ul {
+    list-style: none;
+}
+
+/*ヘッダー*/
+header {
+    background-color: #202225;
+    height: 200px;
+}
+
+.head-title {
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+#title-img {
+    transform: translateY(-230%);
+    transition: 0.5s;
+    display: none;
+}
+
+#title-img:hover {
+    box-shadow: 0 6px 12px rgba(255, 250, 177, 0.2);
+    position: relative;
+    bottom: 5px;
+    filter: brightness(200%);
+}
+
+#title-img:active {
+    box-shadow: 0 66px 72px rgba(255, 250, 177, 9.99);
+    position: relative;
+    bottom: 10px;
+    filter: brightness(400%);
+}
+
+/*メイン*/
+.main {
+    background-color: #3A3D43;
+    padding: 100px 80px;
+}
+
+.copy-container h2 {
+    font-size: 140px;
+}
+  
+.copy-container h3 {
+    font-size: 60px;
+}
+
+.box-p {
+    display: block;
+}
+
+.iframe-dis {
+    display: block;
+    left: 20px;
+}
+
+#discord-join-button {
+    user-select: none;
+    color: #FFFFF5;
+    background-color: rgb(0, 223, 130);
+    border-radius: 10px;
+    box-shadow: 0px 8px rgb(0, 116, 67);
+    font-size: 30px;
+    padding: 10px;
+    display: inline;
+    text-align: center;
+    
+}
+
+#discord-join-button:active {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);/*下に動く*/
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+    border-bottom: none;
+}
+
+#title {
+    display: none;
+}
+
+#subtitle {
+    display: none;
+}
+
+.blue {
+    color: rgb(51, 241, 255);
+    text-decoration: underline;
+}
+
+.big-title {
+    font-size: 60px;
+}
+
+.p-little-big {
+    font-size: 20px;
+}
+
+.big-kaigyo {
+    margin-bottom: 20px;
+}
+
+.page-not-found {
+    background-image: url(img/error404.gif);
+    background-repeat: repeat;
+    background-size: 10%;
+    text-align: center
+}
+
+.page-not-found-title {
+    font-size: 60px;
+}
+
+.icon img {
+    padding: 5px;
+    box-shadow: black 0px 1px 30px;
+    border-radius: 1000px;
+    width: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
+.profile-content p {
+    text-align: center;
+    display: block;
+    margin: 20px auto;
+    font-size: 40px;
+    text-shadow : 1px 1px 0 black,
+                  -1px 1px 0 black,
+                  1px -1px 0 black,
+                  -1px -1px 0 black;
+    padding: 10px;
+    background-color: rgba(34, 34, 34, 0.8);
+    border-radius: 5px;
+    width: 60%;
+}
+.profile-content h2 {
+    text-align: center; 
+    margin-top: 40px; 
+    font-size: 30px;
+}
+.intro-table table {
+    margin-left:auto;
+    margin-right:auto;
+}
+.intro-table td {
+    padding: 5px;
+    font-size: 30px;
+    padding: 5px 10px;
+}
+.table-key {
+    text-align: center;
+    text-shadow:1px 1px 0 black,
+                -1px 1px 0 black,
+                1px -1px 0 black,
+                -1px -1px 0 black;
+}
+.table-value {
+    text-align: left;
+    text-shadow:1px 1px 0 black,
+                -1px 1px 0 black,
+                1px -1px 0 black,
+                -1px -1px 0 black;
+}
+.table-tr1 {
+    background: rgba(0, 0, 0, 0.5);
+}
+.table-tr2 {
+    background: rgba(41, 41, 41, 0.5);
+}
+.socials {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+.socials img {
+    padding: 20px;
+    display: block;
+    margin: 0 auto;
+    transition: 4s;
+}
+.socials img:hover {
+    transform: rotateY(2140deg);
+}
+/*フッター*/
+.footer {
+    background-color: #2F3136;
+    height: 200px;
+    padding: 40px;
+}
+
+.site-license,.footer-logo {
+    display: inline-block;
+    margin: 0px;
+    position: relative;
+    bottom: 50px;
+}
+
+
+
+
+
+
+
+
+
+/*******ここからはその他*********/
+
+/* ▼ GoToTopButton*/
+#top_move {
+    user-select: none;
+    font-size: 26px;
+    cursor: pointer;
+    display: inline;
+    padding: 0.65em 0.5em;
+    text-decoration: none;
+    background: #EF323D;
+    color: #FFF;
+    border-bottom: solid 5px #750006;
+    border-radius: 10px;
+    position:fixed;
+    right:40px;
+    bottom:40px;
+    transition:0s 0.1s ease-out;
+}
+
+#top_move:active {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);/*下に動く*/
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+    border-bottom: none;
+}
+/* ▲ GoToButton*/
+
+/* ▼ ハンバーガ*/
+nav.header-menu {
+    position: fixed;
+    z-index: 2;
+    top: 15px;
+    left: 20px;
+    text-align: center;
+    transition: all 0.3s;
+    width: 200px;
+    transform: rotateX(450deg);
+    transition: 0.5s;
+}
+/* このクラスを、jQueryで付与・削除する */
+nav.header-menu.active {
+    transform: rotateX(0deg);
+}
+nav.header-menu ul {
+    margin: 0 auto;
+    padding: 0;
+    width: 300%;
+}
+/*各メニューの設定*/
+nav.header-menu ul li {
+    font-size: 1.5em;
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.95);
+    border-radius: 10em;
+    transition: 0.3s;
+}
+nav.header-menu ul li:hover {
+    /*transform:translateX(70%)*/
+    font-size: 1.5em;
+}
+nav.header-menu ul li a {
+    display: block;
+    color: whitesmoke;
+    padding: 1em 0;
+    border-radius: 10em;
+}
+/*れいんぼー*/
+.menu-purple li a{
+    background: rgba(11, 22, 73, 0.3);
+}
+.menu-blue li a{
+    background: rgba(60, 12, 71, 0.3);
+}
+.header-menu ul span li a:hover {
+    border: solid rgb(168, 250, 45);
+    filter: brightness(400%);
+}
+/*ハンバーガーボタン*/
+.nav-toggle {
+    display: block;
+    position: fixed;
+    left: 30px;
+    top: 30px;
+    width: 42px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 3;
+    background: rgba(90, 90, 90, 0.75);
+    text-align: center;
+    border: gray solid 5px;
+}
+.nav-toggle span {
+    display: block;
+    position: absolute;
+    width: 30px;
+    border-bottom: solid 3px white;
+    -webkit-transition: .35s ease-in-out;
+    -moz-transition: .35s ease-in-out;
+    transition: .35s ease-in-out;
+    left: 6px;
+}
+.burger-top {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+.burger-bottom {
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.burger-middle {
+    border-radius: 100%;
+}
+.nav-toggle span:nth-child(1) {
+    top: 9px;
+}
+.nav-toggle span:nth-child(2) {
+    top: 18px;
+}
+.nav-toggle span:nth-child(3) {
+    top: 27px;
+}
+.nav-toggle span:nth-child(4) {
+    border: none;
+    color: #eee;
+    font-size: 9px;
+    font-weight: bold;
+    top: 34px;
+}
+/* 最初のspanを315度に */
+.nav-toggle.active span:nth-child(1) {
+    top: 18px;
+    left: 6px;
+    -webkit-transform: rotate(315deg);
+    -moz-transform: rotate(315deg);
+    transform: rotate(315deg);
+}  
+/* 2番目と3番目のspanを-315度に */
+.nav-toggle.active span:nth-child(2),
+.nav-toggle.active span:nth-child(3) {
+    top: 18px;
+    -webkit-transform: rotate(-315deg);
+    -moz-transform: rotate(-315deg);
+    transform: rotate(-315deg);
+}
+/* ▲ ハンバーガ*/
