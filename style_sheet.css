@@ -82,7 +82,7 @@ header {
 
 .iframe-dis {
     display: block;
-    left: 20px;
+    margin: 0 auto;
 }
 
 #discord-join-button {
