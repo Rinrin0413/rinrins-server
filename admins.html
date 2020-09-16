@@ -28,7 +28,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
         <style>
 .main {
-    height: 50em;
+    height: 80em;
 }
 .admins {
     display: flex;
@@ -67,13 +67,34 @@
 .admins div:hover {
     width: 310px;
 }
+h1 {
+    font-size: 80px;
+    border: 3px rgb(247, 225, 185) solid;
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(0, 128, 128, 0.5);
+    border-radius: 10px;
+}
+h3 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: lighter;
+    margin-bottom: 100px;
+}
+hr {
+	height: 30px;
+	background-image: url(img/ui/log_oak.png);
+    background-size: 30px;
+}
         </style>
     <body>
         <!--[{(ヘッダ)}]ー-->
         <header>
-            <h1 class="head-title">
+            <h2 class="head-title">
                 <a href="https://rinrin0413.github.io/rinrins-server/"><img src="img/server-tag.png" alt="title" height="150px" id="title-img"></a>
-            </h1>
+            </h2>
 
             <div class="nav-toggle">
                 <span class="burger-top"></span>
@@ -95,6 +116,11 @@
         <!--[{(メイン)}]-->
         <div class=main>
             <script src="script.js"></script>
+            <div style="text-align: center;">
+                <h1>Rinrin's Server Operators</h1>
+            </div>
+            <h3>～愉快な運営さん達～</h3>
+            <hr>
             <div class="admins">
                 <div>
                     <a href="rinrin.html">
