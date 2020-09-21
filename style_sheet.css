@@ -62,6 +62,15 @@ header {
     filter: brightness(400%);
 }
 
+.ac {
+    width: 200px;
+    height: auto;
+    margin: 20px;
+    padding: 5px;
+    position: relative;
+    bottom: 70px;
+}
+
 /*メイン*/
 .main {
     background-color: #3A3D43;
@@ -294,7 +303,7 @@ header {
 }
 .news-text img {
     border: black 5px solid;
-    width: 600px;
+    width: 700px;
     height: auto;
 }
 .Release {
